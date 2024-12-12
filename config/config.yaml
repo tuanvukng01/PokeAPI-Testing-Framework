@@ -1,0 +1,24 @@
+base_url: "https://pokeapi.co/api/v2"
+
+endpoints:
+  - name: "pokemon_endpoint"
+    path: "/pokemon/{name}"
+    test_values:
+      - "pikachu"
+      - "bulbasaur"
+      - "charizard"
+    expected_status: 200
+    max_response_time_ms: 500
+
+  - name: "invalid_pokemon_endpoint"
+    path: "/pokemon/{name}"
+    test_values:
+      - "invalidname123"
+    expected_status: 404
+    max_response_time_ms: 500
+
+performance_threshold:
+  default_max_response_time_ms: 1000
+
+schema_validation:
+  pokemon_schema: "config/schema_pokemon.json"

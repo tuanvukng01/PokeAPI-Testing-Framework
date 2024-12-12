@@ -14,9 +14,9 @@ ENV/
 env/
 *.venv
 
-# Configuration files
-config/*.yaml
-config/*.json
+## Configuration files
+#config/*.yaml
+#config/*.json
 
 # Logs
 *.log

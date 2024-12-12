@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test reports
+reports/
+*.html
+
+# Virtual environment
+.env/
+venv/
+ENV/
+env/
+*.venv
+
+# Configuration files
+config/*.yaml
+config/*.json
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Dependency files
+*.egg-info/
+*.lock
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# GitHub Actions
+.github/workflows/*.log
+
+# Ignore specific sensitive files
+.env
+config/secrets.yaml

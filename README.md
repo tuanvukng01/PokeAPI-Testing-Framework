@@ -45,7 +45,7 @@ endpoints:
   - "pokemon"
   - "ability"
   - "type"
-performance_threshold: 1.0  # Max acceptable response time in seconds
+performance_threshold: 1.0  
 ```
 
 ### 4. Run the Tests
@@ -85,23 +85,23 @@ Steps:
 ```
 advanced_api_testing_framework/
 ├─ config/
-│  ├─ config.yaml          # YAML file for test configurations
-│  ├─ schema_pokemon.json  # JSON schema for response validation
+│  ├─ config.yaml         
+│  ├─ schema_pokemon.json  
 ├─ tests/
-│  ├─ conftest.py          # Pytest fixtures
-│  ├─ test_data_validation.py  # Tests for schema validation
-│  ├─ test_endpoints.py        # Tests for endpoint connectivity
-│  ├─ test_performance.py      # Tests for response performance
+│  ├─ conftest.py         
+│  ├─ test_data_validation.py  
+│  ├─ test_endpoints.py        
+│  ├─ test_performance.py     
 ├─ utils/
-│  ├─ helpers.py           # Helper functions
-│  ├─ logger.py            # Logging utilities
-│  ├─ schema_validator.py  # JSON schema validation logic
-├─ reports/                # Generated HTML reports
+│  ├─ helpers.py           
+│  ├─ logger.py           
+│  ├─ schema_validator.py 
+├─ reports/                
 ├─ .github/
 │  └─ workflows/
-│     └─ ci.yaml           # GitHub Actions workflow
-├─ requirements.txt        # Project dependencies
-└─ README.md               # Project documentation
+│     └─ ci.yaml          
+├─ requirements.txt      
+└─ README.md             
 ```
 
 ---

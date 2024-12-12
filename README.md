@@ -22,8 +22,8 @@ This project is a robust and extensible API testing framework written in Python 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/advanced_api_testing_framework.git
-cd advanced_api_testing_framework
+git clone https://github.com/tuanvukng01/PokeAPI-Testing-Framework.git
+cd PokeAPI-Testing-Framework
 ```
 
 ### 2. Install Dependencies

@@ -21,5 +21,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Clean pytest cache
+        run: rm -rf .pytest_cache reports/
+
       - name: Run tests
-        run: pytest --html=reports/report.html --self-contained-html
+        run: PYTHONPATH=$PYTHONPATH:$(pwd) pytest --html=reports/report.html --self-contained-html
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: reports/report.html
